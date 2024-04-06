@@ -20,7 +20,7 @@ const renderBoard = () => {
 
 const setMessage = (currentPlayer, winnerFlag = false, drawFlag = false) => {
   if (winnerFlag) {
-    winner.textContent = `Player ${currentPlayer} Win!`;
+    winner.textContent = `Hurray, Player ${currentPlayer} Win!`;
     currentUserMessage.style.display = "none";
   } else if (drawFlag) {
     draw.textContent = `Its Draw`;

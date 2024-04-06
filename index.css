@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #22282c;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#heading {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #d7e4c0;
+  margin-top: 3rem;
+  text-shadow: 0px 0px 2px #fff6e9;
+}
+#tic-tac-toe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+#box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 300px;
+  margin: 20px auto;
+  gap: 10px;
+}
+.box {
+  height: 6rem;
+  width: 6rem;
+  cursor: pointer;
+  background-color: #404c51;
+  color: #fff6e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #404c51;
+  font-size: 2.3rem;
+  text-shadow: 0px 0px 4px #fff6e9;
+  transition: background-color 0.3s ease;
+}
+.box:hover {
+  box-shadow: 0px 0px 7px #8c8f91;
+}
+#reset-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#reset {
+  width: 7rem;
+  height: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #585e60;
+  box-shadow: 0px 0px 15px #404c51;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+#reset:hover {
+  box-shadow: 0px 0px 7px #8c8f91;
+}
+#player-indication,
+#winner,
+#draw {
+  font-size: 1.5rem;
+}
+.winner-box {
+  background-color: #136d13;
+  color: #fff6e9;
+  animation-name: example;
+  animation-duration: 3s;
+}
+@keyframes example {
+  from {
+    background-color: #3dfc3d;
+    color: #22282c;
+  }
+  to {
+    background-color: #136d13;
+    color: #fff6e9;
+  }
+}
